@@ -3,7 +3,7 @@ package br.com.microservice.loja.api.dto;
 public class InfoFornecedorDTO {
 
 	private String estado;
-	private String rua;
+	private String endereco;
 	private int numero;
 
 	public String getEstado() {
@@ -14,12 +14,12 @@ public class InfoFornecedorDTO {
 		this.estado = estado;
 	}
 
-	public String getRua() {
-		return rua;
+	public String getEndereco() {
+		return endereco;
 	}
 
-	public void setRua(String rua) {
-		this.rua = rua;
+	public void setEndereco(String endereco) {
+		this.endereco = endereco;
 	}
 
 	public int getNumero() {
