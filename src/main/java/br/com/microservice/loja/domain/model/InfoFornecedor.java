@@ -12,9 +12,9 @@ public class InfoFornecedor {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String endereco;
-	private int numero;
 	private String estado;
-
+	private String nome;
+	
 	public Long getId() {
 		return id;
 	}
@@ -31,12 +31,12 @@ public class InfoFornecedor {
 		this.endereco = endereco;
 	}
 
-	public int getNumero() {
-		return numero;
+	public String getNome() {
+		return nome;
 	}
 
-	public void setNumero(int numero) {
-		this.numero = numero;
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 
 	public String getEstado() {

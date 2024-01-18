@@ -4,8 +4,8 @@ public class InfoFornecedorDTO {
 
 	private String estado;
 	private String endereco;
-	private int numero;
-
+	private String nome;
+	
 	public String getEstado() {
 		return estado;
 	}
@@ -22,12 +22,12 @@ public class InfoFornecedorDTO {
 		this.endereco = endereco;
 	}
 
-	public int getNumero() {
-		return numero;
+	public String getNome() {
+		return nome;
 	}
 
-	public void setNumero(int numero) {
-		this.numero = numero;
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 
 }
