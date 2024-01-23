@@ -21,13 +21,13 @@ public class PedidoController {
 	@Autowired
 	private PedidoService pedidoService;
 	
-	@PostMapping
-	public Pedido realizaPedido(@RequestBody List<ItemDoPedidoDTO> produtos) {
-		return pedidoService.realizaPedido(produtos);
-	}
-	
 	@GetMapping("/{id}")
 	public Pedido getPedidoPorId(@PathVariable Long id) {
 		return pedidoService.getPedidoPorId(id);
+	}
+	
+	@PostMapping
+	public Pedido realizaPedido(@RequestBody List<ItemDoPedidoDTO> produtos) {
+		return pedidoService.realizaPedido(produtos);
 	}
 }
